@@ -85,6 +85,7 @@ namespace cscalc
             this.button_mc.TabIndex = 1;
             this.button_mc.Text = "MC";
             this.button_mc.UseVisualStyleBackColor = false;
+            this.button_mc.Click += new System.EventHandler(this.button_mc_Click);
             // 
             // button_ms
             // 
@@ -99,6 +100,7 @@ namespace cscalc
             this.button_ms.TabIndex = 2;
             this.button_ms.Text = "MS";
             this.button_ms.UseVisualStyleBackColor = false;
+            this.button_ms.Click += new System.EventHandler(this.button_ms_Click);
             // 
             // button_mr
             // 
@@ -114,6 +116,7 @@ namespace cscalc
             this.button_mr.TabIndex = 3;
             this.button_mr.Text = "MR";
             this.button_mr.UseVisualStyleBackColor = false;
+            this.button_mr.Click += new System.EventHandler(this.button_mr_Click);
             // 
             // button_invert
             // 
@@ -128,6 +131,7 @@ namespace cscalc
             this.button_invert.TabIndex = 8;
             this.button_invert.Text = "+/-";
             this.button_invert.UseVisualStyleBackColor = false;
+            this.button_invert.Click += new System.EventHandler(this.button_invert_Click);
             // 
             // button_c
             // 
@@ -142,6 +146,7 @@ namespace cscalc
             this.button_c.TabIndex = 7;
             this.button_c.Text = "C";
             this.button_c.UseVisualStyleBackColor = false;
+            this.button_c.Click += new System.EventHandler(this.button_c_Click);
             // 
             // button_ce
             // 
@@ -156,6 +161,7 @@ namespace cscalc
             this.button_ce.TabIndex = 6;
             this.button_ce.Text = "CE";
             this.button_ce.UseVisualStyleBackColor = false;
+            this.button_ce.Click += new System.EventHandler(this.button_ce_Click);
             // 
             // button_del
             // 
@@ -170,6 +176,7 @@ namespace cscalc
             this.button_del.TabIndex = 5;
             this.button_del.Text = "<-";
             this.button_del.UseVisualStyleBackColor = false;
+            this.button_del.Click += new System.EventHandler(this.button_del_Click);
             // 
             // button_mul
             // 
@@ -184,6 +191,7 @@ namespace cscalc
             this.button_mul.TabIndex = 16;
             this.button_mul.Text = "*";
             this.button_mul.UseVisualStyleBackColor = false;
+            this.button_mul.Click += new System.EventHandler(this.button_operation_click);
             // 
             // button_6
             // 
@@ -198,6 +206,7 @@ namespace cscalc
             this.button_6.TabIndex = 15;
             this.button_6.Text = "6";
             this.button_6.UseVisualStyleBackColor = false;
+            this.button_6.Click += new System.EventHandler(this.button_number_click);
             // 
             // button_5
             // 
@@ -212,6 +221,7 @@ namespace cscalc
             this.button_5.TabIndex = 14;
             this.button_5.Text = "5";
             this.button_5.UseVisualStyleBackColor = false;
+            this.button_5.Click += new System.EventHandler(this.button_number_click);
             // 
             // button_4
             // 
@@ -226,6 +236,7 @@ namespace cscalc
             this.button_4.TabIndex = 13;
             this.button_4.Text = "4";
             this.button_4.UseVisualStyleBackColor = false;
+            this.button_4.Click += new System.EventHandler(this.button_number_click);
             // 
             // button_div
             // 
@@ -240,6 +251,7 @@ namespace cscalc
             this.button_div.TabIndex = 12;
             this.button_div.Text = "/";
             this.button_div.UseVisualStyleBackColor = false;
+            this.button_div.Click += new System.EventHandler(this.button_operation_click);
             // 
             // button_9
             // 
@@ -254,6 +266,7 @@ namespace cscalc
             this.button_9.TabIndex = 11;
             this.button_9.Text = "9";
             this.button_9.UseVisualStyleBackColor = false;
+            this.button_9.Click += new System.EventHandler(this.button_number_click);
             // 
             // button_8
             // 
@@ -268,6 +281,7 @@ namespace cscalc
             this.button_8.TabIndex = 10;
             this.button_8.Text = "8";
             this.button_8.UseVisualStyleBackColor = false;
+            this.button_8.Click += new System.EventHandler(this.button_number_click);
             // 
             // button_7
             // 
@@ -282,6 +296,7 @@ namespace cscalc
             this.button_7.TabIndex = 9;
             this.button_7.Text = "7";
             this.button_7.UseVisualStyleBackColor = false;
+            this.button_7.Click += new System.EventHandler(this.button_number_click);
             // 
             // button_add
             // 
@@ -296,6 +311,7 @@ namespace cscalc
             this.button_add.TabIndex = 24;
             this.button_add.Text = "+";
             this.button_add.UseVisualStyleBackColor = false;
+            this.button_add.Click += new System.EventHandler(this.button_operation_click);
             // 
             // button_dot
             // 
@@ -308,8 +324,9 @@ namespace cscalc
             this.button_dot.Name = "button_dot";
             this.button_dot.Size = new System.Drawing.Size(50, 50);
             this.button_dot.TabIndex = 23;
-            this.button_dot.Text = ".";
+            this.button_dot.Text = ",";
             this.button_dot.UseVisualStyleBackColor = false;
+            this.button_dot.Click += new System.EventHandler(this.button_number_click);
             // 
             // button_0
             // 
@@ -324,6 +341,7 @@ namespace cscalc
             this.button_0.TabIndex = 21;
             this.button_0.Text = "0";
             this.button_0.UseVisualStyleBackColor = false;
+            this.button_0.Click += new System.EventHandler(this.button_number_click);
             // 
             // button_sub
             // 
@@ -338,6 +356,7 @@ namespace cscalc
             this.button_sub.TabIndex = 20;
             this.button_sub.Text = "-";
             this.button_sub.UseVisualStyleBackColor = false;
+            this.button_sub.Click += new System.EventHandler(this.button_operation_click);
             // 
             // button_3
             // 
@@ -352,6 +371,7 @@ namespace cscalc
             this.button_3.TabIndex = 19;
             this.button_3.Text = "3";
             this.button_3.UseVisualStyleBackColor = false;
+            this.button_3.Click += new System.EventHandler(this.button_number_click);
             // 
             // button_2
             // 
@@ -366,6 +386,7 @@ namespace cscalc
             this.button_2.TabIndex = 18;
             this.button_2.Text = "2";
             this.button_2.UseVisualStyleBackColor = false;
+            this.button_2.Click += new System.EventHandler(this.button_number_click);
             // 
             // button_1
             // 
@@ -380,6 +401,7 @@ namespace cscalc
             this.button_1.TabIndex = 17;
             this.button_1.Text = "1";
             this.button_1.UseVisualStyleBackColor = false;
+            this.button_1.Click += new System.EventHandler(this.button_number_click);
             // 
             // button_equal
             // 
@@ -394,6 +416,7 @@ namespace cscalc
             this.button_equal.TabIndex = 30;
             this.button_equal.Text = "=";
             this.button_equal.UseVisualStyleBackColor = false;
+            this.button_equal.Click += new System.EventHandler(this.button_equal_Click);
             // 
             // button_pow
             // 
@@ -406,8 +429,9 @@ namespace cscalc
             this.button_pow.Name = "button_pow";
             this.button_pow.Size = new System.Drawing.Size(50, 50);
             this.button_pow.TabIndex = 27;
-            this.button_pow.Text = "pow\r\n(x, y)";
+            this.button_pow.Text = "pow (x, y)";
             this.button_pow.UseVisualStyleBackColor = false;
+            this.button_pow.Click += new System.EventHandler(this.button_operation_click);
             // 
             // button_sqrt
             // 
@@ -420,8 +444,9 @@ namespace cscalc
             this.button_sqrt.Name = "button_sqrt";
             this.button_sqrt.Size = new System.Drawing.Size(50, 50);
             this.button_sqrt.TabIndex = 26;
-            this.button_sqrt.Text = "sqrt\r\n(x, y)";
+            this.button_sqrt.Text = "sqrt (x, y)";
             this.button_sqrt.UseVisualStyleBackColor = false;
+            this.button_sqrt.Click += new System.EventHandler(this.button_operation_click);
             // 
             // Form1
             // 
@@ -459,6 +484,7 @@ namespace cscalc
             this.MaximumSize = new System.Drawing.Size(315, 440);
             this.MinimumSize = new System.Drawing.Size(315, 440);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "calculator";
             this.ResumeLayout(false);
             this.PerformLayout();
